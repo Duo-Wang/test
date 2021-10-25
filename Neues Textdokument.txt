@@ -1,0 +1,139 @@
+paket amsmath
+\(......\) 代入Text,
+
+\( a + b = xy \)
+
+\[.....\] 插入Text但独立另起一段显示,passt(Lange oder hervorgehobene Formel)
+
+\[a^2 = \frac{1}{2}\]
+
+align Nummeriert mehrzeilig
+align* Ohne Nummerierung mehrzeilig
+使用\begin{align/align*}
+在除end前那一句不需要结尾\\另起。其余每行需Am Ende mit \\
+
+Etwas Text.... \notag 可取消该行序号
+Etwas Text.... \tag{..} 可自定义序号内容
+\end{}
+
+
+\begin{align/align*}
+          && a    & = b + c \\
+\iff\quad && a -c & = b 
+\end{algin}
+
+      a = b + c
+<=>a - c = b 
+
+
+
+a^{...Text}
+a^bc 但^只作用于其后仅一位，即hoch b
+a_{...Text}
+Summe \(\sum\)
+      \(\sum_a^b\) 
+aber das ist besser
+      \(\displaystyle \sum_a^b\)
+
+积:...
+
+
+
+\(\dot{x}\) und  \(\ddot{x}\)
+
+
+分数
+\frac{分子}{分母}
+
+
+\sqrt{}
+
+在MatheModus下Latex会自动忽略空格
+需要使用Befehl: \,  halbs Leerzeichen
+               \quad   1em lang Leerzeichen
+               \qquad  2em lang Leerzeichen
+
+
+
+变换字体
+Paket: amssymb
+
+\(\mathcal{....Text}\)
+\(\mathbb{...Text}\)
+
+在(,[,{前使用\（后同理），可在MM下显示括号
+
+\left\{x,y}\in\mathbb{R}2\middle\
+
+
+
+
+
+\cdots ...
+\vdots .
+       .
+       .
+\还有斜省略号 \ddots 
+
+
+\infty
+
+希腊字母
+\phi \lmabda \omega....
+
+数学运算符号
+80Seite 
+数学计算符号
+81Seite
+数学逻辑符号
+82Seite
+
+
+\(\{1,2\}\)$\in$\(\{1,2,3\}\)
+
+\in und \ni must include $...$
+
+paket:circuitikz und eu...电路图S.89
+
+
+Paket:biblatex
+
+\usepackage[backend}[style][url]{biblatex}
+\addbibresource{Dateiname.bib}
+引用图书馆
+
+
+
+在uni图书馆界面搜索想要的书籍，点击书籍右下角的Exportieren选择biblatex，
+保存文件（不可同名），双击文件后即可获得引用书籍所有信息（年份，作者，url等）
+
+
+
+要用pdflatex
+biber
+pdflatex
+pdflatex （Aufruf 3)
+Lösung:Latexmk(Tools-> Latexmk)
+Direkt Latexmk->PDF
+
+
+Einheit
+Paket:
+\usepackage[locale=DE]{siunnitx}
+
+\(1,345 V/m \)->1,345 V/m
+
+
+\ang{5}  5°
+\SI{0.587}{kg}        0,587kg
+SI使得数字宋体加粗， {kg}单位标准化
+
+
+\because     因为
+\therefore   所以
+
+
+
+
+
+
